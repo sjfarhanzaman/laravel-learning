@@ -3,18 +3,16 @@
 namespace App\Models;
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
+use BasementChat\Basement\Contracts\User as BasementUserContract;
+use BasementChat\Basement\Traits\HasPrivateMessages;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
 
-use BasementChat\Basement\Contracts\User as BasementUserContract;
-use BasementChat\Basement\Traits\HasPrivateMessages;
-
-
 class User extends Authenticatable implements BasementUserContract
 {
-    use HasApiTokens, HasFactory, Notifiable, HasPrivateMessages;
+    use HasApiTokens, HasFactory, HasPrivateMessages, Notifiable;
 
     /**
      * The attributes that are mass assignable.

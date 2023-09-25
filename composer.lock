@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7cf486253f2bfa57b496fa28b03223c2",
+    "content-hash": "02416c2ec07e91c4047a2c8f0e78e2c7",
     "packages": [
         {
             "name": "basement-chat/basement-chat",
